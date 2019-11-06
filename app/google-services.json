@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "190066967094",
+    "firebase_url": "https://sensordata-57a16.firebaseio.com",
+    "project_id": "sensordata-57a16",
+    "storage_bucket": "sensordata-57a16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190066967094:android:070efae76ec52775d60e97",
+        "android_client_info": {
+          "package_name": "com.example.arduinosensor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190066967094-6vln8qhnmg4fv9oqtvomq55np6dr8n7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMAi22gCCDYpkz1FGKd0-VGe6NatMgrqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190066967094-6vln8qhnmg4fv9oqtvomq55np6dr8n7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

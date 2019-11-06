@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseReference dataNode = mRootReference.child("data");
 
 
+    // Test comment
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

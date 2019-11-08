@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import java.util.Random;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
@@ -14,6 +15,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     // Test comment
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +57,10 @@ public class MainActivity extends AppCompatActivity {
                 // mChildReference.setValue("Changed value");
 
                 // Update the value of data child node on Firebase
-                dataNode.setValue(73);
+                // with a generated random number
+                Random rand = new Random();
+                int randomNumber = rand.nextInt(11);
+                dataNode.setValue(randomNumber);
             }
         });
     }
@@ -68,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String message = dataSnapshot.getValue(String.class);
-                dataView.setText(message);
+                dataView.setText(dataSnapshot.getKey() + ": " + message);
             }
 
             @Override
